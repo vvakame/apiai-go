@@ -18,8 +18,8 @@ type Status struct {
 
 // Message is the returned output. Type is for various message types. The will be added soon.
 type Message struct {
-	Speech string `json:"speech"`
-	Type   int    `json:"type"`
+	Speech string      `json:"speech"`
+	Type   interface{} `json:"type"`
 }
 
 // Fulfillment is data about text response(s), rich messages, response received from webhook.
